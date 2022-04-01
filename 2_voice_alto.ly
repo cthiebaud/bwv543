@@ -1,7 +1,5 @@
-changeLeft = {}
-changeRight = {}
-
 alto = \relative c' { 
+    \key a \minor \time 6/8
     \repeat unfold 5 { R1*3/4 } | % 1 2 3 4 5
     e8 g16 fis g e fis8 b,16 fis' b fis  | %6
     g8 e b' c16 b c a c g  | % 7
@@ -88,10 +86,10 @@ alto = \relative c' {
     d4 r8 b c d  |
     e4 r8 c d e  |
     f4 r8 d16 f d g d a' |
-    \changeLeft g, \changeRight g' \changeLeft a, \changeRight g' \changeLeft b, \changeRight g' c, e c f c g' |
-    \changeLeft f, \changeRight f' \changeLeft g, \changeRight f' \changeLeft a, \changeRight f' bes, d bes e bes f' |
-    \changeLeft gis, \changeRight e' \changeLeft a, \changeRight e' \changeLeft b \changeRight e c e c fis c gis' |
-    \changeLeft a, \changeRight a' g a f a e gis e a e b' |
+    g, g' a, g' b, g' c, e c f c g' |
+    f, f' g, f' a, f' bes, d bes e bes f' |
+    gis, e' a, e' b e c e c fis c gis' |
+    a, a' g a f a e gis e a e b' |
     c, e c fis c gis' c, e a gis a e |
     d a' gis fis gis b e,4. |
     b'4.~ b8 a4~ |
@@ -104,20 +102,20 @@ alto = \relative c' {
     R1*3/4 |
     \repeat unfold 9 R1*3/4 |
     e16 fis g fis g e fis b, dis fis b fis |
-    g8 \changeLeft b, e~ e dis16 cis dis8 |
-    e \changeRight b' e~ e dis16 cis dis8 |
+    g8 b, e~ e dis16 cis dis8 |
+    e b' e~ e dis16 cis dis8 |
     e16 e, g b e b c b c a c g |
     c a c fis, c' d, b' a b g b fis |
     b g b e, b' c, a' g a fis a e |
     a fis a dis, a' b, g'8 e g  |
-    e \changeLeft cis \changeRight e f d f |
-    d \changeLeft b \changeRight d e g e |
-    \changeLeft c a c \changeRight d f d  |
-    \changeLeft b gis b \changeRight c4 r8 |
-    d4 r8 \changeLeft r8 gis a  |
+    e cis e f d f |
+    d b d e g e |
+    c a c d f d  |
+    b gis b c4 r8 |
+    d4 r8 r8 gis a  |
     b4 r8 e, a f~ |
     f16 e d f e d c e d c b a |
-    gis4 r8 \changeRight a'4 r8 |
+    gis4 r8 a'4 r8 |
     b4.~ b4.~ |
     b a~ |
     a8 gis a b4.~ |

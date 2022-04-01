@@ -18,8 +18,7 @@ global = {
 }
 
 globalF = {
-  \key a \minor
-  \time 6/8
+  \key a \minor \time 6/8
 }
 
 changeLeft = {\change Staff = "leftF"\voiceOne}

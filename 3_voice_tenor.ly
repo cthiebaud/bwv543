@@ -1,4 +1,5 @@
 tenor = \relative c' { | % 0
+  \key a \minor \time 6/8
   \repeat unfold 14 { R1*3/4 } | % 14
   a8 c16 b c a b8 e,16 b' e b | % 15
   c8 a e' f16 e f d f c | % 16

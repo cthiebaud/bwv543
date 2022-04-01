@@ -1,4 +1,5 @@
 bass = \relative c { 
+  \key a \minor \time 6/8
   \transposition c
   \repeat unfold 25 { R1*3/4 }
   r4 r8 e8 g16 fis g e
@@ -67,7 +68,7 @@ bass = \relative c {
   g, a b c4 r8
   f, g a bes c d
   \repeat unfold 4 { e,4 r8 r4 r8 }
-  r16 b' d c d b gis' e f e f e
+  r16 b' d c d b gis' e f e f d
   b' fis gis fis gis e d' a b a b gis
   c gis a e f dis e gis a e f dis
   e gis a e f dis e dis e b c gis
