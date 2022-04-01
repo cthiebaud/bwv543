@@ -1,6 +1,6 @@
 soprano = \relative c'' { 
     \key a \minor \time 6/8
-    a8^\markup{\larger\bold"Soprano" \normalsize\medium "(violin)"} c16 b c a b8 e,16 b' e b | %1
+    a8 c16 b c a b8 e,16 b' e b | %1
     c8 a e' f16 e f d f c | %2
     f d f b, f' g, e' d e c e b  | %4
     e c e a, e' f, d' c d b d a | %5
