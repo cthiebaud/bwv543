@@ -27,6 +27,7 @@ changeRight = {}
   \score {
     \new StaffGroup \with {
         \remove "System_start_delimiter_engraver"
+        \accidentalStyle modern-cautionary
     } <<
       \new Staff = "soprano" \with {
         instrumentName = "Violin"
@@ -37,15 +38,21 @@ changeRight = {}
         midiInstrument = "acoustic guitar (nylon)"
       } {\clef "treble_8" \alto }
       \new Staff = "tenor" \with {
-        instrumentName = "Cello"
+        instrumentName = "Alto Clarinet"
         midiInstrument = "clarinet"
       } {\clef bass \tenor }
       \new Staff = "bass" \with {
-        instrumentName = "Bass Synth."
+        instrumentName = "Synth Bass"
         midiInstrument = "synth bass 2"
-      } {\clef bass \bass }
+       } {\clef bass \bass }
     >>
-    \layout { }
+    \layout { 
+      % indent = 0
+      \context {
+        \Voice
+        \consists "Ambitus_engraver"
+      }
+    }
     \midi {
       \context {
         \Score

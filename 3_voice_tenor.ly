@@ -23,38 +23,34 @@ tenor = \relative c' { | % 0
   b~ b | % 34
   \repeat unfold 16 { R1*3/4 } | % 35 - 50
   \clef bass r4 r8 r16 fis g dis e ais, | % 51
-  b dis fis c' a fis g8 e b' | % 
-  c16 b c a c g c a c fis, c' d,  | % 
-  b' a b g b fis b g b e, b' c, | % 
-  a' g a fis a e a fis a dis, a' b, | % 
-  g' fis g a b g a g a b c a | % 
-  d c d d, fis d g fis g a b g | % 
-  c b c c, e c fis e fis g a fis | % 
-  b a b b, dis b e dis e fis g e  | % 
-  a gis a a, c a d cis d e f d | % 
-  g fis g a b g c8 b a  | % 
-  g4. c | % 
-  f,16 g f e d c b8 b' b, | % 
-  e16 f e d c b a8 a' a, | % 
-  d16 e d c b a g8 g' g, | % 
-  c c' b a a, a' | % 
-  d, d' c b b, b'  | % 
-  e, e' d c c, c' | % 
-  fis, e fis g fis g | % 
-  c, b c d c d | % 
-  e4. fis | % 
-  g~ g8 e c  | % 
-  fis4.~ fis8 d b  | % 
-  e4.~ e8 c a  | % 
-  d4.~ d~ | % 
-  d~ d~ | % 
-  d~ d~ | % 
-  d~ d8 r r | % 
-  \repeat unfold 4 { R1*3/4 } | % 
-  \voiceTwo \repeat unfold 5 R1*3/4 | % 
-  \oneVoice \repeat unfold 3 R1*3/4 | % 
-  \voiceTwo \repeat unfold 3 R1*3/4 | % 
-  \oneVoice \repeat unfold 2 R1*3/4 | % 
+  b dis fis c' a fis g8 e b' | % 52
+  c16 b c a c g c a c fis, c' d,  | % 53 
+  b' a b g b fis b g b e, b' c, | % 54
+  a' g a fis a e a fis a dis, a' b, | % 55 
+  g' fis g a b g a g a b c a | % 56 
+  d c d d, fis d g fis g a b g | % 57
+  c b c c, e c fis e fis g a fis | % 58
+  b a b b, dis b e dis e fis g e  | % 59
+  a gis a a, c a d cis d e f d | % 60
+  g fis g a b g c8 b a  | % 61
+  g4. c | % 62
+  f,16 g f e d c b8 b' b, | % 63
+  e16 f e d c b a8 a' a, | % 64
+  d16 e d c b a g8 g' g, | % 65
+  c c' b a a, a' | % 66
+  d, d' c b b, b'  | % 67 
+  e, e' d c c, c' | % 68
+  fis, e fis g fis g | % 69
+  c, b c d c d | % 7
+  e4. fis | % 71
+  g~ g8 e c  | % 72
+  fis4.~ fis8 d b  | % 73
+  e4.~ e8 c a  | % 74
+  d4.~ d~ | % 75
+  d~ d~ | % 76
+  d~ d~ | % 77
+  d~ d8 r r | % 78
+  \repeat unfold 17 { R1*3/4 | } % 79 - 81 
   r4 r8 a'8 c16 b c a  | % 
   b8 e,16 b' e b c8 a e' | % 
   f16 e f d f c f d f b, f' g,  | % 
@@ -98,9 +94,11 @@ tenor = \relative c' { | % 0
   b' a b gis b e, a gis a fis a dis, | % 
   gis fis gis e fis gis a gis a e gis a | % 
   b a b e, a b c b c e, b' c | % 
-  d4 r8 \repeat unfold 3 { << d4 \\ b4 >> r8 } | % 
-  << e4 \\ c4 >> r8 r4 r8 | % 
+  d4 r8 \repeat unfold 3 { b4 r8 } | % 
+  c4 r8 r4 r8 | % 
   \repeat unfold 4 { R1*3/4 } | % 
-  \repeat unfold 4 { s1*3/4 } | % 
-  b4 b8 s4. << {r8 a8 e a4\fermata r8} \\ {r8 c, b a4 r8 } \\ {r8 e' d e4 r8} >> | % 
+  \repeat unfold 3 { s1*3/4 } | % 
+  r4. f4 f8 |
+  f4 f8 s4. |
+  r8 c b c4\fermata r8 | % 
 } 

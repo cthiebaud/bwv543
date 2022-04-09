@@ -14,12 +14,12 @@ soprano = \relative c'' {
     a16 a gis fis gis e c'4.~ | %13
     c16 c b a g fis e4.~  | %14
     e16 e d c b a gis a b c d b c d e d e f d4.~ | %15
-    d16 d c b a gis a4 a'8~ | %6
+    d8 c16 b a gis a4 a'8~ | %16
     a g16 f e d g4.~  |
     g8 f16 e d c f4.~ |
     f8 e16 d c d e4. |
     r16 e a g fis e d4. |
-    r8 e16 fis g8~ g4.~ |
+    r16 b e fis g8~ g4.~ |
     g16 cis, d8 e f4. |
     e d |
     c~ c16 c b a b d |
@@ -140,19 +140,8 @@ soprano = \relative c'' {
     gis4 r8 b4 r8 |
     d4 r8 f4 r8 |
     e4 r8 r4. |
-    r2. | 
-    r2. | 
-    r2. | 
-    r2. | 
-    r2. | 
-    r2. | 
-    r2. | 
-    r4 gis8 gis4 gis8 | 
-    gis4 gis8 gis8 r4 |
-    << 
-      {r8 a  gis a4\fermata r8} 
-      {s4    d,8 s4. } 
-      {r8 e  e e4 r8} 
-      {r8 c b c4 r8} 
-    >> |
+    \repeat unfold 7 R1*3/4 | 
+    r4 gis,8 gis4 gis8 | 
+    gis4 gis8 r4. |
+    r8 a' gis a4\fermata r8 |
 }
