@@ -44,7 +44,7 @@ changeRight = {}
       \new Staff = "bass" \with {
         instrumentName = "Synth Bass"
         midiInstrument = "synth bass 2"
-       } {\clef bass \bass }
+      } {\clef bass \bass }
     >>
     \layout { 
       % indent = 0
