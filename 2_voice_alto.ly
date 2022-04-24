@@ -1,6 +1,9 @@
 alto = \relative c' { 
-    \key a \minor \time 6/8
-    \repeat unfold 5 { R1*3/4 } | % 1 2 3 4 5
+    \key a \minor 
+    \time 6/8
+    \compressEmptyMeasures
+    \override MultiMeasureRest.expand-limit = #1
+    R1*6/8*5 | % 1 2 3 4 5
     e8 g16 fis g e fis8 b,16 fis' b fis  | %6
     g8 e b' c16 b c a c g  | % 7
     c a c fis, c' d, b' a b g b fis | % 8
@@ -117,6 +120,9 @@ alto = \relative c' {
     }
     >>
     }
+
+    % \override Staff.NoteHead.style = #'diamond
+    \set fontSize = -3
     a,,4 r8 r4 r8
     \repeat unfold 2 { a4 r8 r4 r8 }
     e' fis gis a a, a'
@@ -128,6 +134,8 @@ alto = \relative c' {
     g fis g e fis d e d e c d b
     c b c a b g a4 g8
     fis e dis' e b'4
+    \set fontSize = 0
+    % \override Staff.NoteHead.style = #'default
 
     e16 fis g fis g e fis b, dis fis b fis |
     g8 b, e~ e dis16 cis dis8 |
@@ -164,7 +172,7 @@ alto = \relative c' {
         >>
     }
     \relative c'' {
-        \repeat unfold 4  R1*3/4 | 
+        R1*6/8*4 | 
         r32  a   [b c  b  a    gis a]   fis a   [b c]   dis, a' [b c b a gis a] dis, fis [g a] |
         c,   a'  [b c  b  a    gis a]   c,  dis [e fis] a,   a' [b c b a gis a] fis  a   [b c] |
         dis, fis [g a] c, dis [e   fis] a,  c   [b a]   gis  b  [c d c b a   b] gis  b   [c d] |

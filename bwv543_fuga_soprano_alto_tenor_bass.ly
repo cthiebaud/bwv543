@@ -25,34 +25,59 @@ changeRight = {}
 
 \book {
   \score {
+    % \new PianoStaff <<
+    %   \set PianoStaff.instrumentName = #"Piano"
+    %   \new Staff = "upper" \tenor
+    %   \new Staff = "lower" \bass
+    % >>
     \new StaffGroup \with {
         \remove "System_start_delimiter_engraver"
         \accidentalStyle modern-cautionary
     } <<
       \new Staff = "soprano" \with {
-        instrumentName = "Violin"
+        \override InstrumentName.self-alignment-X = #RIGHT
+        instrumentName = \markup \right-column {
+          Soprano
+          \teeny \italic
+          "(Violin)"
+        } 
         midiInstrument = "violin"
       } {\clef treble \soprano }
       \new Staff = "alto" \with {
-        instrumentName = "Guitar"
+        \override InstrumentName.self-alignment-X = #RIGHT
+        instrumentName = \markup \right-column {
+          Alto
+          \teeny \italic
+          "(Guitar)"
+        } 
         midiInstrument = "acoustic guitar (nylon)"
       } {\clef "treble_8" \alto }
       \new Staff = "tenor" \with {
-        instrumentName = "Alto Clarinet"
+        \override InstrumentName.self-alignment-X = #RIGHT
+        instrumentName = \markup \right-column {
+          Tenor
+          \teeny \italic
+          "(Clarinet)"
+        } 
         midiInstrument = "clarinet"
       } {\clef bass \tenor }
       \new Staff = "bass" \with {
-        instrumentName = "Synth Bass"
+        \override InstrumentName.self-alignment-X = #RIGHT
+        instrumentName = \markup \right-column {
+          Bass
+          \teeny \italic
+          "(Cello)"
+        } 
         midiInstrument = "synth bass 2"
       } {\clef bass \bass }
     >>
     \layout { 
       % indent = 0
-      \context {
-        \Voice
-        \consists "Ambitus_engraver"
-      }
-    }
+      % \context {
+      %   \Voice
+      %   \consists "Ambitus_engraver"
+      % }
+    }% 
     \midi {
       \context {
         \Score

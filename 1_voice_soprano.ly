@@ -1,5 +1,8 @@
 soprano = \relative c'' { 
-    \key a \minor \time 6/8
+    \key a \minor 
+    \time 6/8
+    \compressEmptyMeasures
+    \override MultiMeasureRest.expand-limit = #1
     a8 c16 b c a b8 e,16 b' e b | %1
     c8 a e' f16 e f d f c | %2
     f d f b, f' g, e' d e c e b  | %4
@@ -140,7 +143,7 @@ soprano = \relative c'' {
     gis4 r8 b4 r8 |
     d4 r8 f4 r8 |
     e4 r8 r4. |
-    \repeat unfold 7 R1*3/4 | 
+    R1*6/8*7 | 
     r4 gis,8 gis4 gis8 | 
     gis4 gis8 r4. |
     r8 a' gis a4\fermata r8 |

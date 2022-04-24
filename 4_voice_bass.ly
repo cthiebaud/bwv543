@@ -1,7 +1,11 @@
 bass = \relative c { 
-  \key a \minor \time 6/8
+  \clef bass
+  \key a \minor 
+  \time 6/8
+  \compressEmptyMeasures
+  \override MultiMeasureRest.expand-limit = #1
   \transposition c
-  \repeat unfold 25 { R1*3/4 | } % 1 - 25
+  R1*6/8*25 | % 1 - 25
   r4 r8 e8 g16 fis g e | % 26
   fis8 b, b'16 fis g8 e b' | % 27
   c16 b c a c g c a c fis, c' d, | % 28
@@ -28,7 +32,7 @@ bass = \relative c {
   e'4 r8 b'4 g8~ | % 49 
   g16 a b8 b, e4 r8 | % 50
   e,4 r8 r4 r8 | % 51
-  \repeat unfold 43 { R1*3/4 | }  % 52 - 94
+  R1*6/8*43 | % 52 - 94
   r4 r8 a c16 b c a | % 9 
   b8 e, e'16 b c8 a a'~ | % 9
   a gis4 a16 a, c b c a | % 9
@@ -76,9 +80,9 @@ bass = \relative c {
   a c c e e a c, e e a a c
   gis a e f dis e b c gis a e fis 
   dis4 r8 r4 r8
-  R1*3/4
+  R1*6/8
   r4 r8 e4 r8
-  R1*3/4
+  R1*6/8
   d''4 d8 r4. |
   e,,4 e8 a4\fermata r8 \bar "|."
 }

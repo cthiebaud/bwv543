@@ -1,6 +1,10 @@
 tenor = \relative c' { | % 0
-  \key a \minor \time 6/8
-  \repeat unfold 14 { R1*3/4 } | % 14
+  \clef treble
+  \key a \minor 
+  \time 6/8
+  \compressEmptyMeasures
+  \override MultiMeasureRest.expand-limit = #1
+  R1*6/8*14 | % 14
   a8 c16 b c a b8 e,16 b' e b | % 15
   c8 a e' f16 e f d f c | % 16
   f d f b, f' g, e' d e c e b  | % 17
@@ -21,7 +25,7 @@ tenor = \relative c' { | % 0
   d4. d8 d d | % 32
   c4. c | % 33
   b~ b | % 34
-  \repeat unfold 16 { R1*3/4 } | % 35 - 50
+  R1*6/8*16| % 35 - 50
   \clef bass r4 r8 r16 fis g dis e ais, | % 51
   b dis fis c' a fis g8 e b' | % 52
   c16 b c a c g c a c fis, c' d,  | % 53 
@@ -50,7 +54,7 @@ tenor = \relative c' { | % 0
   d~ d~ | % 76
   d~ d~ | % 77
   d~ d8 r r | % 78
-  \repeat unfold 17 { R1*3/4 | } % 79 - 81 
+  R1*6/8*17 | % 79 - 81 
   r4 r8 a'8 c16 b c a  | % 
   b8 e,16 b' e b c8 a e' | % 
   f16 e f d f c f d f b, f' g,  | % 
@@ -96,8 +100,7 @@ tenor = \relative c' { | % 0
   b a b e, a b c b c e, b' c | % 
   d4 r8 \repeat unfold 3 { b4 r8 } | % 
   c4 r8 r4 r8 | % 
-  \repeat unfold 4 { R1*3/4 } | % 
-  \repeat unfold 3 { s1*3/4 } | % 
+  R1*6/8*7 | % 
   r4. f4 f8 |
   f4 f8 s4. |
   r8 c b c4\fermata r8 | % 
