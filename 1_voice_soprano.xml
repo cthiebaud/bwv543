@@ -2,21 +2,15 @@
 <!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 2.0 Partwise//EN"
                                 "http://www.musicxml.org/dtds/partwise.dtd">
 <score-partwise version="3.0">
-  <movement-title>BWV 543 - Fuga</movement-title>
   <identification>
     <encoding>
       <software>python-ly 0.9.7</software>
-      <encoding-date>2022-04-09</encoding-date>
+      <encoding-date>2022-04-25</encoding-date>
     </encoding>
-    <creator type="composer">Johann Sebastian Bach</creator>
-    <tempoWholesPerMinute />
   </identification>
   <part-list>
-    <part-group type="start" number="1">
-      <group-symbol>bracket</group-symbol>
-    </part-group>
     <score-part id="P1">
-      <part-name>Violin</part-name>
+      <part-name>Soprano Violin</part-name>
       <score-instrument id="P1-I1">
         <instrument-name>violin</instrument-name>
         <instrument-sound>strings.violin</instrument-sound>
@@ -26,7 +20,6 @@
         <midi-name>violin</midi-name>
       </midi-instrument>
     </score-part>
-    <part-group type="stop" number="1" />
   </part-list>
   <part id="P1">
     <measure number="1">
@@ -45,6 +38,11 @@
           <line>2</line>
         </clef>
       </attributes>
+      <direction placement="above">
+        <direction-type>
+          <words>Soprano </words>
+        </direction-type>
+      </direction>
       <note>
         <pitch>
           <step>A</step>
@@ -135,9 +133,6 @@
         <voice>1</voice>
         <type>16th</type>
       </note>
-      <backup>
-        <duration>24</duration>
-      </backup>
     </measure>
     <measure number="2">
       <note>
@@ -1349,13 +1344,22 @@
           <step>D</step>
           <octave>5</octave>
         </pitch>
-        <duration>4</duration>
+        <duration>2</duration>
         <tie type="stop" />
         <voice>1</voice>
-        <type>eighth</type>
+        <type>16th</type>
         <notations>
           <tied type="stop" />
         </notations>
+      </note>
+      <note>
+        <pitch>
+          <step>D</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>2</duration>
+        <voice>1</voice>
+        <type>16th</type>
       </note>
       <note>
         <pitch>
@@ -10595,10 +10599,18 @@
         <rest />
         <duration>12</duration>
         <voice>1</voice>
-        <type>whole</type>
+        <type>quarter</type>
+        <dot />
       </note>
     </measure>
     <measure number="142">
+      <note>
+        <rest />
+        <duration>168</duration>
+        <voice>1</voice>
+      </note>
+    </measure>
+    <measure number="143">
       <note>
         <rest />
         <duration>8</duration>
@@ -10639,7 +10651,7 @@
         <accidental>sharp</accidental>
       </note>
     </measure>
-    <measure number="143">
+    <measure number="144">
       <note>
         <pitch>
           <step>G</step>
@@ -10670,7 +10682,7 @@
         <dot />
       </note>
     </measure>
-    <measure number="144">
+    <measure number="145">
       <note>
         <rest />
         <duration>4</duration>

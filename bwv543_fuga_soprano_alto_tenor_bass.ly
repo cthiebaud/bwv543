@@ -1,75 +1,48 @@
 \version "2.22.2"
 
-\pointAndClickOff
-
-\header {
-  title = \markup {\medium {"BWV 543 - Fuga"}}
-  composer = "Johann Sebastian Bach"
-}
-
-#(set-default-paper-size "letter")
-
-global = {
-  \key a \minor
-  \time 6/8
-}
-
-changeLeft = {}
-changeRight = {}
-
-\include "1_voice_soprano.ly"
-\include "2_voice_alto.ly"
-\include "3_voice_tenor.ly"
-\include "4_voice_bass.ly"
-
+\include "0_globals.ly"
+\include "1_voice_soprano_part.ly"
+\include "2_voice_alto_part.ly"
+\include "3_voice_tenor_part.ly"
+\include "4_voice_bass_part.ly"
 
 \book {
   \score {
-    % \new PianoStaff <<
-    %   \set PianoStaff.instrumentName = #"Piano"
-    %   \new Staff = "upper" \tenor
-    %   \new Staff = "lower" \bass
-    % >>
     \new StaffGroup \with {
-        \remove "System_start_delimiter_engraver"
-        \accidentalStyle modern-cautionary
+      \staffGlobals
     } <<
       \new Staff = "soprano" \with {
-        \override InstrumentName.self-alignment-X = #RIGHT
         instrumentName = \markup \right-column {
           Soprano
           \teeny \italic
-          "(Violin)"
+          "Violin"
         } 
         midiInstrument = "violin"
-      } {\clef treble \soprano }
+      } {\musicGlobals \clef treble \soprano }
       \new Staff = "alto" \with {
-        \override InstrumentName.self-alignment-X = #RIGHT
         instrumentName = \markup \right-column {
           Alto
           \teeny \italic
-          "(Guitar)"
+          "Guitar"
         } 
         midiInstrument = "acoustic guitar (nylon)"
-      } {\clef "treble_8" \alto }
+      } {\musicGlobals \clef "treble_8" \alto }
       \new Staff = "tenor" \with {
-        \override InstrumentName.self-alignment-X = #RIGHT
         instrumentName = \markup \right-column {
           Tenor
           \teeny \italic
-          "(Clarinet)"
+          "Clarinet"
         } 
         midiInstrument = "clarinet"
-      } {\clef bass \tenor }
+      } {\musicGlobals \clef bass \tenor }
       \new Staff = "bass" \with {
-        \override InstrumentName.self-alignment-X = #RIGHT
         instrumentName = \markup \right-column {
           Bass
           \teeny \italic
-          "(Cello)"
+          "Cello"
         } 
         midiInstrument = "synth bass 2"
-      } {\clef bass \bass }
+      } {\musicGlobals \clef bass \bass }
     >>
     \layout { 
       % indent = 0
