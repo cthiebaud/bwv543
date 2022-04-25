@@ -6,12 +6,12 @@
 
 \new PianoStaff  \with {
   \staffGlobals
-  } <<
+} <<
   \set PianoStaff.instrumentName = \markup \right-column {
-          Tenor & Bass
-          \teeny \italic
-          "Piano"
-        } 
+    Tenor & Bass
+    \teeny \italic
+    "Piano"
+  }
 
   \new Staff = "upper" {\musicGlobals \clef treble \tenor}
   \new Staff = "lower" {\musicGlobals \clef bass \bass}

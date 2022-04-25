@@ -5,12 +5,12 @@
 
 \new Staff = "tenor" \with {
   \staffGlobals
-    instrumentName = \markup \right-column {
-      Tenor
-      \teeny \italic
-      "Clarinet"
-    } 
-    midiInstrument = "clarinet"
+  instrumentName = \markup \right-column {
+    Tenor
+    \teeny \italic
+    "Clarinet"
+  }
+  midiInstrument = "clarinet"
 } {
   \musicGlobals
   \clef bass \tenor

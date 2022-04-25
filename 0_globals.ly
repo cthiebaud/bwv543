@@ -15,12 +15,12 @@
 }
 
 staffGlobals = {
-  \accidentalStyle "modern-cautionary" 
+  \accidentalStyle "modern-cautionary"
   \override InstrumentName.self-alignment-X = #RIGHT
 }
 
 musicGlobals = {
-  \key a \minor 
+  \key a \minor
   \time 6/8
   \compressEmptyMeasures
   \override MultiMeasureRest.expand-limit = #1

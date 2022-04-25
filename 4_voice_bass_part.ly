@@ -1,4 +1,4 @@
-bass = \relative c { 
+bass = \relative c {
   \transposition c
   R1*6/8*25 | % 1 - 25
   r4 r8 e8 g16 fis g e | % 26
@@ -15,30 +15,30 @@ bass = \relative c {
   f a f d b d | % 37
   e gis e c a a' | % 38
   a16 c b c a b gis b a b gis a | % 39
-  fis a gis a fis gis a e f e f c | % 40 
-  d4 r8 e4 r8 | % 41 
-  f4 r8 c4 r8 | % 42 
-  d4 gis,8 a e' e, | % 43 
-  a4. e' | % 44 
-  a,8 c16 b c a d4 a8 | % 45 
-  b g b c4 r8 | % 46 
-  a f a b4 r8 | % 47 
-  gis e gis a4 r8 | % 48 
-  e'4 r8 b'4 g8~ | % 49 
+  fis a gis a fis gis a e f e f c | % 40
+  d4 r8 e4 r8 | % 41
+  f4 r8 c4 r8 | % 42
+  d4 gis,8 a e' e, | % 43
+  a4. e' | % 44
+  a,8 c16 b c a d4 a8 | % 45
+  b g b c4 r8 | % 46
+  a f a b4 r8 | % 47
+  gis e gis a4 r8 | % 48
+  e'4 r8 b'4 g8~ | % 49
   g16 a b8 b, e4 r8 | % 50
   e,4 r8 r4 r8 | % 51
   R1*6/8*43 | % 52 - 94
-  r4 r8 a c16 b c a | % 9 
+  r4 r8 a c16 b c a | % 9
   b8 e, e'16 b c8 a a'~ | % 9
   a gis4 a16 a, c b c a | % 9
   d4 r8 r b16 a b g | % 9
   c4 r8 r a16 g a f | % 9
-  b4 r8 r gis16 fis gis e | % 100 
+  b4 r8 r gis16 fis gis e | % 100
   \repeat unfold 3 { a4 r8 r4 r8 | }  | % 101 - 103
-  e' fis gis a a, a' | % 104 
+  e' fis gis a a, a' | % 104
   d, e f g g, g'16 a | % 105
-  b8 a g c c, e | % 106 
-  a4.~ a~ | % 107 
+  b8 a g c c, e | % 106
+  a4.~ a~ | % 107
   a8. g16 a fis g8. fis16 g e | % 108
   c'8. b16 c a b a b g a fis | % 109
   g fis g e fis d e d e c d b | % 110
@@ -50,13 +50,13 @@ bass = \relative c {
   e,4 r8 a4 r8 | % 116
   d,4 r8 g4 r8 | % 117
   c,4 r8 fis4 r8 | % 118
-  b4. g'16 fis g e g d 
+  b4. g'16 fis g e g d
   g e g cis, g' a, f' e f d f c
-  f d f b, f' g, e' d e c e b 
+  f d f b, f' g, e' d e c e b
   e c e a, e' f, d' c d b d a
   d b d gis, d' e, c'4 r8
-  c4 r8 b8 b' a 
-  gis4 r8 a f d 
+  c4 r8 b8 b' a
+  gis4 r8 a f d
   e4 r8 r4 r8
   e,4 r8 r4 r8
   r8 e fis gis fis e
@@ -71,9 +71,9 @@ bass = \relative c {
   b' fis gis fis gis e d' a b a b gis
   c gis a e f dis e gis a e f dis
   e gis a e f dis e dis e b c gis
-  a dis e b c gis a dis e b c gis 
+  a dis e b c gis a dis e b c gis
   a c c e e a c, e e a a c
-  gis a e f dis e b c gis a e fis 
+  gis a e f dis e b c gis a e fis
   dis4 r8 r4 r8
   R1*6/8
   r4 r8 e4 r8

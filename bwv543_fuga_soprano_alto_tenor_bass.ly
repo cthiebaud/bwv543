@@ -16,7 +16,7 @@
           Soprano
           \teeny \italic
           "Violin"
-        } 
+        }
         midiInstrument = "violin"
       } {\musicGlobals \clef treble \soprano }
       \new Staff = "alto" \with {
@@ -24,7 +24,7 @@
           Alto
           \teeny \italic
           "Guitar"
-        } 
+        }
         midiInstrument = "acoustic guitar (nylon)"
       } {\musicGlobals \clef "treble_8" \alto }
       \new Staff = "tenor" \with {
@@ -32,7 +32,7 @@
           Tenor
           \teeny \italic
           "Clarinet"
-        } 
+        }
         midiInstrument = "clarinet"
       } {\musicGlobals \clef bass \tenor }
       \new Staff = "bass" \with {
@@ -40,17 +40,17 @@
           Bass
           \teeny \italic
           "Cello"
-        } 
+        }
         midiInstrument = "synth bass 2"
       } {\musicGlobals \clef bass \bass }
     >>
-    \layout { 
+    \layout {
       % indent = 0
       % \context {
       %   \Voice
       %   \consists "Ambitus_engraver"
       % }
-    }% 
+    }
     \midi {
       \context {
         \Score
@@ -61,4 +61,4 @@
   \paper {
     % page-count = #2
   }
-} 
+}

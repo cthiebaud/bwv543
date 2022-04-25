@@ -5,12 +5,12 @@
 
 \new Staff = "bass" \with {
   \staffGlobals
-    instrumentName = \markup \right-column {
-        Bass
-        \teeny \italic
-        "Cello"
-    } 
-    midiInstrument = "synth bass 2"
+  instrumentName = \markup \right-column {
+    Bass
+    \teeny \italic
+    "Cello"
+  }
+  midiInstrument = "synth bass 2"
 } {
   \musicGlobals
   \clef bass \bass

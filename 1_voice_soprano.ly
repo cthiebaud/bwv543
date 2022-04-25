@@ -13,5 +13,5 @@
   midiInstrument = "violin"
 } {
   \musicGlobals
-  \clef treble \soprano 
+  \clef treble \soprano
 }
