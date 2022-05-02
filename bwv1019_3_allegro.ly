@@ -1,43 +1,45 @@
 \version "2.22.2"
 
+#(set-global-staff-size 20)
+
 rightHandA =  {
   <<
     \relative a' {
       g8 a b16 a g a b4 e,~ | % 1
       e8 dis16 e fis e dis cis b8 dis fis a~ | % 2
-      \break 
+      \break
       a g16 a b a g fis e8 g b e~ | %3
       e dis16 e fis e dis cis b2 | %4
-      \break 
-      g'2. g4 |%5 
+      \break
+      g'2. g4 |%5
       fis2. fis4 |%6
-      \break 
+      \break
       e2~ e8 fis16 g a b c8  |%7
       \grace e,8 dis2 r4 dis\turn | %8
-      \break 
+      \break
       e8 b fis' b, g'2~ | %9
       g~ g8 fis16 g a g fis e | %10
-      \break 
+      \break
       fis8 g a16 g fis g a2~ | %11
       a~ a8 g16 a b a g fis | %12
       \pageBreak
       g8 r r4 r a16 g fis e | %13
       fis8 r r4 r g16 fis e d | %14
-      \break 
-      e4 r fis r | %15 
-      g r a r | %16 
-      \break 
+      \break
+      e4 r fis r | %15
+      g r a r | %16
+      \break
       s1 | %17
       s2 e~ | %18
-      \break 
+      \break
       e16 e d c d c b a r d c b c b a g | %19
       r c b a b a g fis r b a g a g fis e | %20
-      \break 
+      \break
       fis e d8~ d16 e fis g a g fis8~ fis16 g a b | %21
       c b a b c d e fis g fis a g fis e d c | %22
-      \break 
+      \break
       b8 c16 d c b a g <g b>4 <fis a> | %23
-      s1 | 
+      s1 |
     }
     \\
     \relative a' {
@@ -59,7 +61,7 @@ rightHandA =  {
       r16 c b c d c b c r16 c b c d c b a | %16
       b4\mordent g8. b16 c4\mordent g8. c16 | %17
       d4\mordent g,8. d'16 r8 r16 d c b a g | %18
-      fis 4 r e r | %19 
+      fis 4 r e r | %19
       d r cis2 | %20
       d8 s2.. | %21
       s1 | %22
@@ -81,28 +83,28 @@ leftHandA = \relative a, {
   b16 b, cis dis e fis g a b a b c b a g fis | %8
   g fis g a g fis e dis e dis e fis e d cis b |%9
   a8 a' b, a' cis, a' a, a' | %10
-  d, a' e a fis a16 g a8 fis |% 11  
+  d, a' e a fis a16 g a8 fis |% 11
   b,8 b' cis, b' dis, b' b, b' | %12
   e, fis g e a e cis a | %13
   d e fis d g d b g | %14
   c e a4\mordent d,8 fis b4\mordent | %15
   e,8 g c4\mordent fis,8 a fis d | %16
   g,16 g' fis g a g fis g a, g' fis g a g fis g  | %17
-  b, g' fis g a g fis g  c, g' fis g a g fis g | %18 
-  << 
+  b, g' fis g a g fis g  c, g' fis g a g fis g | %18
+  <<
     {
-      r4 b g a  | %19 
-      fis g e2 |% 20 
+      r4 b g a  | %19
+      fis g e2 |% 20
     }
     \\
     {
-      d2 d~ | %19 
-      d1 |% 20 
+      d2 d~ | %19
+      d1 |% 20
     }
   >>
   d8 fis a, d fis, d' a fis | %21
   d fis a d e c a fis' | %22
-  g b e, g c,4 d g2 r16 d b d g,4 
+  g b e, g c,4 d g2 r16 d b d g,4
   \bar ":|."
 }
 
@@ -112,7 +114,9 @@ rightHandB =  {
       <g b>8 c d16 c b c d4 <e g>~ | % 1
       <e g>8 fis16 g a g fis e d8 b'4 d,8~ | %2
       d16 b c d e d c d e c b a a'4~ | %3
-      a8 gis16 a b a gis fis e4~ e16 d c b | %4
+      a8 gis16 a b a gis fis 
+      % \bar "" \break 
+      e4~ e16 d c b | %4
       c16 e d c d c b a  a' g f e d c b a | %5
       b d c b c b a g g' f e d c b a gis | %6
       a8 d4 c8 b f' 4 a,8 | %7
@@ -121,7 +125,7 @@ rightHandB =  {
       d cis d e f g a b c8 dis,4 e16 fis | %10
       e d' c b e c b a <a c>4 <gis b> | %11
       a16 f e d e d c b a c e a c4~ | %12
-      c16 d, fis a c a c fis a g fis e d c b a  | %13 
+      c16 d, fis a c a c fis a g fis e d c b a  | %13
       c b a g b4~ b16 a b cis dis e fis g  | %14
       a b a g a g fis e dis e dis cis dis cis b a | %15
       g a g fis g fis e dis e8 e'4 d8  | %16
@@ -136,23 +140,23 @@ rightHandB =  {
       g'2. g4 | %25
       fis2. f4~ | %26
       f16 e d c d c b a gis f' e d e d c b | %27
-      c b a g a g fis e dis c' b a b a g fis | %28 
+      c b a g a g fis e dis c' b a b a g fis | %28
       g fis e d e d cis b ais g' fis e fis e dis cis | %29
       dis2~ dis16 b' a g a g fis e | %30
-      c'4 a'~ a16 fis gis a b a gis a | %31 
+      c'4 a'~ a16 fis gis a b a gis a | %31
       b8 d,4 cis8 c16 e fis g fis e dis e | %32
       fis8 a,4 gis8 g16 b c d c b a b  | %
       c8 f4 e8 dis16 c' b a b a g fis | %
       g e dis e fis d cis d e c b c e b ais b | %
       e4~ e16 cis dis e dis fis e dis e d c b | %
-      << 
-      {
-        ais g fis e a fis e dis g4 fis  
-      }
-      \\
-      {
-        s2 e4 dis 
-      }
+      <<
+        {
+          ais g fis e a fis e dis g4 fis
+        }
+        \\
+        {
+          s2 e4 dis
+        }
       >>
       e8 fis16 g a b cis dis e2
     }
@@ -169,7 +173,7 @@ rightHandB =  {
       r4 b'4 a2~ | %
       a4 a g2 | %
       g8 r s2. | %
-      \repeat unfold 3 {s1 |} 
+      \repeat unfold 3 {s1 |}
       a4 r b r |
 
     }
@@ -225,31 +229,45 @@ leftHandB = \relative a, {
     {r16 e fis g r fis g a r8 b4 a8~ | a4 g8 fis g16 e g b e4}
     \\
     {cis,4 c b2 | e2~ e2}
-  >> 
+  >>
 }
 
 \score {
   \new PianoStaff  \with {
-  midiInstrument = "harpsichord"
-  \accidentalStyle piano
+    midiInstrument = "harpsichord"
+    \accidentalStyle piano
   } <<
     \set PianoStaff.instrumentName = \markup {
-      \center-column { 
+      \center-column {
         "Cembalo"
         \line { "Solo" }
       }
     }
-    \new Staff = "upper" {\clef treble \key g \major 
-      \rightHandA 
-      \pageBreak 
-      \rightHandB }
-    \new Staff = "lower" {\clef bass \key g \major 
-      \leftHandA   
+    \new Staff = "upper" 
+    % \transpose e a, 
+    {
+      \clef treble % "treble_8"
+      \key e \minor
+      \rightHandA
+      \pageBreak
+      \rightHandB
+    }
+    \new Staff = "lower" 
+    %\transpose e a 
+    {
+      \clef bass % "treble_8"
+      \key e \minor
+      \leftHandA
       \pageBreak
       \leftHandB
     }
   >>
-  \layout { }
+  \layout {
+    \context {
+      \Voice
+      % \consists "Ambitus_engraver"
+    }
+  }
   \midi {
     \tempo 4 = 100
   }
