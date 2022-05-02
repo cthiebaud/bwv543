@@ -15,3 +15,8 @@
   \musicGlobals
   \clef "treble_8" \alto
 }
+
+
+\paper {
+  page-count = #2
+}
