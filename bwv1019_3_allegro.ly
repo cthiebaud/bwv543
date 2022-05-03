@@ -1,12 +1,12 @@
 \version "2.22.2"
 
-#(set-global-staff-size 20)
+#(set-global-staff-size 19.5)
 
 rightHandA =  {
   <<
     \relative a' {
       g8 a b16 a g a b4 e,~ | % 1
-      e8 dis16 e fis e dis cis b8 dis fis a~ | % 2
+      e8 dis16 e fis e dis cis b8 dis fis a_~ | % 2
       \break
       a g16 a b a g fis e8 g b e~ | %3
       e dis16 e fis e dis cis b2 | %4
@@ -35,7 +35,7 @@ rightHandA =  {
       e16 e d c d c b a r d c b c b a g | %19
       r c b a b a g fis r b a g a g fis e | %20
       \break
-      fis e d8~ d16 e fis g a g fis8~ fis16 g a b | %21
+      fis e d8_~ d16 e fis g a g fis8_~ fis16 g a b | %21
       c b a b c d e fis g fis a g fis e d c | %22
       \break
       b8 c16 d c b a g <g b>4 <fis a> | %23
@@ -49,7 +49,7 @@ rightHandA =  {
       s1 | %4
       r4 b' a2~ | %5
       a4 a g2~ | %6
-      g4 g c2 | %7
+      g4 g c2~ | %7
       c4 b r2 | %8
       r2 r4 b | %9
       cis 8 d16 e d8 e16 fis e2~ | %10
@@ -59,8 +59,8 @@ rightHandA =  {
       r16 e' d cis d c b a c b a g r4 | %14
       r16 c b c d c b c r16 c b c d c b c | %15
       r16 c b c d c b c r16 c b c d c b a | %16
-      b4\mordent g8. b16 c4\mordent g8. c16 | %17
-      d4\mordent g,8. d'16 r8 r16 d c b a g | %18
+      b4^\mordent g8. b16 c4^\mordent g8. c16 | %17
+      d4^\mordent g,8. d'16 r8 r16 d c b a g | %18
       fis 4 r e r | %19
       d r cis2 | %20
       d8 s2.. | %21
@@ -111,31 +111,34 @@ leftHandA = \relative a, {
 rightHandB =  {
   <<
     \relative a' {
-      <g b>8 c d16 c b c d4 <e g>~ | % 1
-      <e g>8 fis16 g a g fis e d8 b'4 d,8~ | %2
-      d16 b c d e d c d e c b a a'4~ | %3
+      <g b>8 c d16 c b c d4 <e g>~ | % 25
+      <e g>8 fis16 g a g fis e d8 b'4 d,8~ | %26
+      d16 b c d e d c d e c b a a'4~ | %27
       a8 gis16 a b a gis fis 
-      % \bar "" \break 
-      e4~ e16 d c b | %4
-      c16 e d c d c b a  a' g f e d c b a | %5
-      b d c b c b a g g' f e d c b a gis | %6
-      a8 d4 c8 b f' 4 a,8 | %7
-      gis b4 f8 \grace g8 f e4 d8~ | %8
-      d16 b c d e f g a cis,4.\trill b16 cis | %9
-      d cis d e f g a b c8 dis,4 e16 fis | %10
-      e d' c b e c b a <a c>4 <gis b> | %11
-      a16 f e d e d c b a c e a c4~ | %12
-      c16 d, fis a c a c fis a g fis e d c b a  | %13
-      c b a g b4~ b16 a b cis dis e fis g  | %14
-      a b a g a g fis e dis e dis cis dis cis b a | %15
-      g a g fis g fis e dis e8 e'4 d8  | %16
-      c16 a g fis g fis e d b' g fis e fis e d c | %17
-      a' fis e dis e dis cis b g'2~ | %18
-      g16 e dis e fis g a b c b a g fis8 e~ | %19
-      e16 c' b ais b g fis e dis cis b8~ b16 \change Staff = "lower" a g fis | % 20
-      g8 a b16 a g a b8 e, \change Staff = "upper" e'4~ | %21
-      e8 dis16 e fis e dis cis b8 dis fis a~ | %22
-      a g16 a b a g fis e8 g b e~ | %23
+      \bar "" \break 
+      e4~ e16 d c b | %28
+      c16 e d c d c b a  a' g f e d c b a | %29
+      b d c b c b a g g' f e d c b a gis | %30
+      a8 d4 c8 b f' 4 a,8 | %31
+      gis b4 f8 \grace g8 f e4 d8~ | %32
+      d16 b c d e f g a cis,4.\trill b16 cis | %33
+      d cis d e f g a b c8 dis,4 e16 fis | %34
+      e d' c b e c b a <a c>4 <gis b> | %35
+      a16 f e d e d c b a c e a c4~ | %36
+      c16 d, fis a c a c fis a g fis e d c b a  | %37
+      c b a g b4~ b16 a b cis dis e fis g  | %38
+      a b a g a g fis e dis e dis cis dis cis b a | %39
+      g a g fis g fis e dis e8 e'4 d8  | %40
+      c16 a g fis g fis e d b' g fis e fis e d c | %41
+      a' fis e dis e dis cis b g'2~ | %42
+      g16 e dis e fis g a b c b a g fis8 e~ | %43
+      \pageBreak
+      e16 c' b ais b g fis e dis cis b8~ b16 \change Staff = "lower" a g fis | % 44
+      g8 a b16 a g a b8 e, \change Staff = "upper" e'4~ | %45
+      e8 dis16 e fis e dis cis b8 dis fis a~ | %46
+      a g16 a b a g fis 
+      \bar "" \break 
+      e8 g b e~ | %47
       e dis16 e fis e dis cis b2 | %24
       g'2. g4 | %25
       fis2. f4~ | %26
