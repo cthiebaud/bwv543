@@ -1,17 +1,10 @@
-\pointAndClickOff
+\version "2.25.26"
 
 #(set-default-paper-size "letter")
 
 \header {
-  title = \markup {\medium {"BWV 543 - Fuga"}}
+  title = \markup { {"BWV 543 - Fuga"} }
   composer = "Johann Sebastian Bach"
-}
-
-\midi {
-  \context {
-    \Score
-    tempoWholesPerMinute = #(ly:make-moment 64 4)
-  }
 }
 
 staffGlobals = {
@@ -25,3 +18,4 @@ musicGlobals = {
   \compressEmptyMeasures
   \override MultiMeasureRest.expand-limit = #1
 }
+
