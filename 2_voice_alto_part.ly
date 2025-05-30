@@ -1,5 +1,6 @@
-alto = \relative c' {
-  R1*6/8*5 | % 1 2 3 4 5
+alto = \relative c {
+  \time 6/8
+  R2. | R2. | R2. | R2. | R2. | % 1 2 3 4 5
   e8 g16 fis g e fis8 b,16 fis' b fis  | %6
   g8 e b' c16 b c a c g  | % 7
   c a c fis, c' d, b' a b g b fis | % 8
@@ -25,21 +26,24 @@ alto = \relative c' {
   e4.~ e8 d16 c b a | % 28
   d4.~ d8 c16 b a g | % 29
   c4.~ c8 b16 a g fis  | % 30
-  b4. a8 <<
-    {s cis }
-    {a a }
-    {g g }
-  >> | % 31
-  <<
-    {d'4. s4   b8 }
-    {a4. g8 g g  }
-    {f4. s8 f f  }
-  >>   | % 32
-  <<
-    {c'4 }
-    {g4 }
-    {e4 }
-  >> c'8 f,4.~ | % 33
+  %% b4. a8 <<
+  %%   {s cis }
+  %%   {a a }
+  %%   {g g }
+  %% >> | % 31
+  %% <<
+  %%   {d'4. s4   b8 }
+  %%   {a4. g8 g g  }
+  %%   {f4. s8 f f  }
+  %% >>   | % 32
+  %% <<
+  %%   {c'4 }
+  %%   {g4 }
+  %%   {e4 }
+  %% >> c'8 f,4.~ | % 33
+  b4. a8 a a | % 31
+  a4. g8 g g | % 32
+  g4 c'8 f,4.~ | % 33  
   f~ f8 e4 | % 34
   e16 d c e d e f e f g e f  | % 34
   d c b d c d e d e f d e | % 35
@@ -160,27 +164,29 @@ alto = \relative c' {
   gis4 gis8 a4 a8 |
   b d c a c a |
   gis4 gis8 fis4 fis8 |
-  \fixed c' {
-    <<
-      {f4 r8 e4  r8 b4   r8 d'4  r8 c'4 r8 r4.}
-      {d4 r8 d4  r8 gis4 r8 gis4 r8 a4  r8 r4.}
-      {s4.   b,4 r8 d4   r8 d4   r8 e4  r8 r4.}
-      {s2.          b,4  r8 b,4  r8 c4  r8 r4.}
-    >>
-  }
+  %% \fixed c' {
+  %%   <<
+  %%     {f4 r8 e4  r8 b4   r8 d'4  r8 c'4 r8 r4.}
+  %%     {d4 r8 d4  r8 gis4 r8 gis4 r8 a4  r8 r4.}
+  %%     {s4.   b,4 r8 d4   r8 d4   r8 e4  r8 r4.}
+  %%     {s2.          b,4  r8 b,4  r8 c4  r8 r4.}
+  %%   >>
+  %% }
+  R2. | R2. | R2. |
   \relative c'' {
-    R1*6/8*4 |
+    R2. | R2. | R2. | R2. |
     r32  a   [b c  b  a    gis a]   fis a   [b c]   dis, a' [b c b a gis a] dis, fis [g a] |
     c,   a'  [b c  b  a    gis a]   c,  dis [e fis] a,   a' [b c b a gis a] fis  a   [b c] |
     dis, fis [g a] c, dis [e   fis] a,  c   [b a]   gis  b  [c d c b a   b] gis  b   [c d] |
     f,   b   [c d  c  b    a   b]   f   b   [c d]   d,   b' [c d c b a   b] d,   b'  [c d] |
     b,   b'  [c d  c  b    a   b]   b,  b'  [c d]   \repeat unfold 3 \tuplet 6/4 { gis,,32 [b e] dis [b' f] } |
-    <<
-      {r8   e' e   e4\fermata r8}
-      {r8   c  b   c4         r8}
-      {r8   a  gis a4         r8}
-      {r8   e  d   e4         r8}
-      \\ {e,4.     a4         r8}
-    >> |
+    %% <<
+    %%   {r8   e' e   e4\fermata r8}
+    %%   {r8   c  b   c4         r8}
+    %%   {r8   a  gis a4         r8}
+    %%   {r8   e  d   e4         r8}
+    %%   \\ {e,4.     a4         r8}
+    %% >> |
+    R2. |
   }
 }

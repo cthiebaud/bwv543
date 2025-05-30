@@ -3,7 +3,9 @@
 \include "0_globals.ly"
 \include "4_voice_bass_part.ly"
 
-\new Staff = "bass" \with {
+\displayLilyMusic \bass
+%% 
+%% \new Staff = "bass" \with {
   \staffGlobals
   instrumentName = \markup \right-column {
     Bass
@@ -11,11 +13,12 @@
     "Cello"
   }
   midiInstrument = "synth bass 2"
-} {
-  \musicGlobals
-  \clef bass \bass
-}
-
-\paper {
-  page-count = #1
-}
+%% } {
+%%   \musicGlobals
+%%   \clef bass \bass
+%% }
+%% 
+%% \paper {
+%%   page-count = #1
+%% }
+%% 

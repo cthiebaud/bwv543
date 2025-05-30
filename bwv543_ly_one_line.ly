@@ -1,6 +1,7 @@
 \version "2.25.26"
 
 \include "0_globals.ly"
+\include "tie-attributes.ily"
 \include "bwv543_ly_main.ly"
 
 % One-line score for notehead extraction
@@ -19,7 +20,12 @@
     } {
       \bwvFivehundredFortyThree
     }
-    \layout {}
+    \layout {
+      \context {
+        \Voice
+        \consists \Tie_grob_engraver
+      }
+    }
     \midi {}
   }
 }

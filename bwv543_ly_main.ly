@@ -1,10 +1,10 @@
 \version "2.25.26"
 
 \include "0_globals.ly"
-\include "1_voice_soprano_part.ly"
-\include "2_voice_alto_part.ly"
-\include "3_voice_tenor_part.ly"
-\include "4_voice_bass_part.ly"
+\include "1_voice_soprano_part_absolute.ly"
+\include "2_voice_alto_part_absolute.ly"
+\include "3_voice_tenor_part_absolute.ly"
+\include "4_voice_bass_part_absolute.ly"
 
 bwvFivehundredFortyThree = {
   <<
@@ -39,7 +39,8 @@ bwvFivehundredFortyThree = {
           "Cello"
         }
         % midiInstrument = "synth bass 2"
-      } {\musicGlobals \clef bass \bass }
+        
+      } {\musicGlobals \set Staff.midiTranspose = -12 \clef bass \bass }
     >>
 }
 

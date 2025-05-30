@@ -1,2 +1,11 @@
-*.wav
+__pycache__/
 .build_cache.json
+*.csv
+*.log
+*.mid
+*.midi
+*.ps
+*.zip
+*~
+/*.pdf
+/*.svg

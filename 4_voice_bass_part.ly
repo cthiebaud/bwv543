@@ -1,5 +1,4 @@
 bass = \relative c {
-  \transposition c
   R1*6/8*25 | % 1 - 25
   r4 r8 e8 g16 fis g e | % 26
   fis8 b, b'16 fis g8 e b' | % 27
