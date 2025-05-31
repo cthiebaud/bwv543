@@ -8,7 +8,7 @@ workInfo:
 
 files:
   svgPath: "bwv543_optimized.svg"
-  notesPath: "bwv1006_json_notes.json"
+  notesPath: "bwv543_json_notes.json"
   audioPath: "bwv543_202505310225.wav"
   
 musicalStructure:
