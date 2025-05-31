@@ -1,0 +1,17 @@
+workInfo:
+  title: "Fuga BWV 543"
+  fullTitle: "Prelude and Fugue in A minor, BWV 543"
+  composer: "J.S. Bach"
+  workId: "bwv543"
+  movementName: "Fuga"
+  externalURL: "https://en.wikipedia.org/wiki/Prelude_and_Fugue_in_A_minor,_BWV_543"
+
+files:
+  svgPath: "bwv543_optimized.svg"
+  notesPath: "bwv1006_json_notes.json"
+  audioPath: "bwv543_202505310225.wav"
+  
+musicalStructure:
+  totalDurationSeconds: 272.8 
+  totalBars: 151
+  visualLeadTimeSeconds: 0.2
