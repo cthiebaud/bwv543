@@ -15,7 +15,7 @@ staffGlobals = {
 musicGlobals = {
   \key a \minor
   \time 6/8
-  \compressEmptyMeasures
-  \override MultiMeasureRest.expand-limit = #1
+  % \compressEmptyMeasures
+  % \override MultiMeasureRest.expand-limit = #1
 }
 

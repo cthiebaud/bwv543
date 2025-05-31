@@ -1,6 +1,7 @@
 \version "2.25.26"
 
 \include "0_globals.ly"
+\include "highlight-bars.ily"
 \include "bwv543_ly_main.ly"
 
 % Define a helper to detect SVG mode
@@ -8,7 +9,7 @@
    (equal? (ly:get-option 'backend) 'svg))
 
 #(if (not is-svg?)
-     (set-global-staff-size 16))   
+     (set-global-staff-size 16))
 
 \book {
   \paper {
@@ -31,5 +32,31 @@
     } {
       \bwvFivehundredFortyThree
     }
+    \layout {
+      % Apply larger note heads only for SVG output
+      #(if is-svg?
+           (ly:parser-include-string
+            "\\override NoteHead.font-size = #2")
+           )
+      \context {
+        \Voice
+        \override StringNumber.stencil = ##f
+      }
+      % Apply highlighting only for SVG output
+      #(if is-svg?
+           (ly:parser-include-string
+            "\\context {
+            \\Staff
+            \\consists Staff_highlight_engraver
+          }
+          \\context {
+            \\Score
+            \\override StaffHighlight.after-line-breaking = #add-data-bar-to-highlight
+          }")
+           )
+    }
+
   }
 }
+
+

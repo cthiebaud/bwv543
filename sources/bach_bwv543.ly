@@ -1,6 +1,6 @@
 \version "2.25.26"
 
-\pointAndClickOff
+%% \pointAndClickOff
 
 \header {
   title = \markup {\medium {"Prelude and Fugue in A minor"}}
