@@ -9,9 +9,9 @@ workInfo:
 files:
   svgPath: "bwv543_optimized.svg"
   notesPath: "bwv543_json_notes.json"
-  audioPath: "bwv543_202505310225.wav"
+  audioPath: "bwv543_202505310225-2.wav"
   
 musicalStructure:
   totalDurationSeconds: 270
-  totalBars: 150
+  totalBars: 153
   visualLeadTimeSeconds: 0.2
