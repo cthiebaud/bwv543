@@ -78,5 +78,5 @@ bass = \relative c {
   r4 r8 e4 r8
   R1*6/8
   d''4 d8 r4. |
-  e,,4 e8 a4\fermata r8 \bar "|."
+  e,,4 e8 a4.\fermata \bar "|."
 }

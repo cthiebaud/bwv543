@@ -142,6 +142,6 @@ soprano = \absolute {
   R1*21/4 |
   r4 gis'8 gis'4 gis'8 |
   gis'4 gis'8 r4. |
-  r8 a''8 gis''8 a''4\fermata r8 |
+  r8 a''8 gis''8 a''4.\fermata |
  
 }

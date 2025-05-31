@@ -99,5 +99,5 @@ tenor = \relative c' {
   R1*6/8*7 | %
   r4. f4 f8 |
   f4 f8 s4. |
-  r8 c b c4\fermata r8 | %
+  r8 c b c4.\fermata | %
 }

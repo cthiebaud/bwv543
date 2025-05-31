@@ -110,6 +110,6 @@ tenor = \absolute {
   R1*21/4 |
   r4. f'4 f'8 |
   f'4 f'8 s4. |
-  r8 c'8 b8 c'4\fermata r8 |
+  r8 c'8 b8 c'4.\fermata |
  
 }

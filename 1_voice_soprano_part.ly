@@ -142,5 +142,5 @@ soprano = \relative c'' {
   R1*6/8*7 |
   r4 gis,8 gis4 gis8 |
   gis4 gis8 r4. |
-  r8 a' gis a4\fermata r8 |
+  r8 a' gis a4.\fermata |
 }
