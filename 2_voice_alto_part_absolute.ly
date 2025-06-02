@@ -149,7 +149,7 @@ alto = \absolute {
     c'32 a'32[ b'32 c''32 b'32 a'32 gis'32 a'32] c'32 dis'32[ e'32 fis'32] a32 a'32[ b'32 c''32 b'32 a'32 gis'32 a'32] fis'32 a'32[ b'32 c''32] |
     dis'32 fis'32[ g'32 a'32] c'32 dis'32[ e'32 fis'32] a32 c'32[ b32 a32] gis32 b32[ c'32 d'32 c'32 b32 a32 b32] gis32 b32[ c'32 d'32] |
     f32 b32[ c'32 d'32 c'32 b32 a32 b32] f32 b32[ c'32 d'32] d32 b32[ c'32 d'32 c'32 b32 a32 b32] d32 b32[ c'32 d'32] |
-    b,32 b32[ c'32 d'32 c'32 b32 a32 b32] b,32 b32[ c'32 d'32] \repeat unfold 3 \tuplet 6/4 { gis,32[ b,32 e32] dis32[ b32 f32] }  |
+    b,32 b32[ c'32 d'32 c'32 b32 a32 b32] b,32 b32[ c'32 d'32] \tuplet 6/4 { gis,32[ b,32 e32] dis32[ b32 f32] } \tuplet 6/4 { gis,,32[ b,,32 e,32] dis,32[ b,32 f,32] } \tuplet 6/4 { gis,,,32[ b,,,32 e,,32] dis,,32[ b,,32 f,,32] } |
     R2. |
    
   }

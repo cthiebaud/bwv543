@@ -179,7 +179,7 @@ alto = \relative c {
     c,   a'  [b c  b  a    gis a]   c,  dis [e fis] a,   a' [b c b a gis a] fis  a   [b c] |
     dis, fis [g a] c, dis [e   fis] a,  c   [b a]   gis  b  [c d c b a   b] gis  b   [c d] |
     f,   b   [c d  c  b    a   b]   f   b   [c d]   d,   b' [c d c b a   b] d,   b'  [c d] |
-    b,   b'  [c d  c  b    a   b]   b,  b'  [c d]   \repeat unfold 3 \tuplet 6/4 { gis,,32 [b e] dis [b' f] } |
+    b,   b'  [c d  c  b    a   b]   b,  b'  [c d]   \tuplet 6/4 { gis,,32 [b e] dis [b' f] } \tuplet 6/4 { gis,,32 [b e] dis [b' f] } \tuplet 6/4 { gis,,32 [b e] dis [b' f] }|
     %% <<
     %%   {r8   e' e   e4\fermata r8}
     %%   {r8   c  b   c4         r8}

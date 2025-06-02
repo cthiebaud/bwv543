@@ -27481,7 +27481,7 @@
   },
   {
     "hrefs": [
-      "2_voice_alto_part_absolute.ly:152:94:95"
+      "2_voice_alto_part_absolute.ly:152:77:78"
     ],
     "on_tick": 172224,
     "off_tick": 172256,
@@ -27490,7 +27490,7 @@
   },
   {
     "hrefs": [
-      "2_voice_alto_part_absolute.ly:152:102:103"
+      "2_voice_alto_part_absolute.ly:152:85:86"
     ],
     "on_tick": 172256,
     "off_tick": 172288,
@@ -27499,7 +27499,7 @@
   },
   {
     "hrefs": [
-      "2_voice_alto_part_absolute.ly:152:107:108"
+      "2_voice_alto_part_absolute.ly:152:90:91"
     ],
     "on_tick": 172288,
     "off_tick": 172320,
@@ -27508,7 +27508,7 @@
   },
   {
     "hrefs": [
-      "2_voice_alto_part_absolute.ly:152:112:113"
+      "2_voice_alto_part_absolute.ly:152:95:96"
     ],
     "on_tick": 172320,
     "off_tick": 172352,
@@ -27517,7 +27517,7 @@
   },
   {
     "hrefs": [
-      "2_voice_alto_part_absolute.ly:152:119:120"
+      "2_voice_alto_part_absolute.ly:152:102:103"
     ],
     "on_tick": 172352,
     "off_tick": 172384,
@@ -27526,7 +27526,7 @@
   },
   {
     "hrefs": [
-      "2_voice_alto_part_absolute.ly:152:123:124"
+      "2_voice_alto_part_absolute.ly:152:106:107"
     ],
     "on_tick": 172384,
     "off_tick": 172416,
@@ -27535,110 +27535,110 @@
   },
   {
     "hrefs": [
-      "2_voice_alto_part_absolute.ly:152:94:95"
+      "2_voice_alto_part_absolute.ly:152:127:128"
     ],
     "on_tick": 172416,
     "off_tick": 172448,
-    "pitch": 44,
+    "pitch": 32,
     "channel": 1
   },
   {
     "hrefs": [
-      "2_voice_alto_part_absolute.ly:152:102:103"
+      "2_voice_alto_part_absolute.ly:152:136:137"
     ],
     "on_tick": 172448,
     "off_tick": 172480,
-    "pitch": 47,
+    "pitch": 35,
     "channel": 1
   },
   {
     "hrefs": [
-      "2_voice_alto_part_absolute.ly:152:107:108"
+      "2_voice_alto_part_absolute.ly:152:142:143"
     ],
     "on_tick": 172480,
     "off_tick": 172512,
-    "pitch": 52,
+    "pitch": 40,
     "channel": 1
   },
   {
     "hrefs": [
-      "2_voice_alto_part_absolute.ly:152:112:113"
+      "2_voice_alto_part_absolute.ly:152:148:149"
     ],
     "on_tick": 172512,
     "off_tick": 172544,
-    "pitch": 51,
+    "pitch": 39,
     "channel": 1
   },
   {
     "hrefs": [
-      "2_voice_alto_part_absolute.ly:152:119:120"
+      "2_voice_alto_part_absolute.ly:152:156:157"
     ],
     "on_tick": 172544,
     "off_tick": 172576,
-    "pitch": 59,
-    "channel": 1
-  },
-  {
-    "hrefs": [
-      "2_voice_alto_part_absolute.ly:152:123:124"
-    ],
-    "on_tick": 172576,
-    "off_tick": 172608,
-    "pitch": 53,
-    "channel": 1
-  },
-  {
-    "hrefs": [
-      "2_voice_alto_part_absolute.ly:152:94:95"
-    ],
-    "on_tick": 172608,
-    "off_tick": 172640,
-    "pitch": 44,
-    "channel": 1
-  },
-  {
-    "hrefs": [
-      "2_voice_alto_part_absolute.ly:152:102:103"
-    ],
-    "on_tick": 172640,
-    "off_tick": 172672,
     "pitch": 47,
     "channel": 1
   },
   {
     "hrefs": [
-      "2_voice_alto_part_absolute.ly:152:107:108"
+      "2_voice_alto_part_absolute.ly:152:161:162"
+    ],
+    "on_tick": 172576,
+    "off_tick": 172608,
+    "pitch": 41,
+    "channel": 1
+  },
+  {
+    "hrefs": [
+      "2_voice_alto_part_absolute.ly:152:183:184"
+    ],
+    "on_tick": 172608,
+    "off_tick": 172640,
+    "pitch": 20,
+    "channel": 1
+  },
+  {
+    "hrefs": [
+      "2_voice_alto_part_absolute.ly:152:193:194"
+    ],
+    "on_tick": 172640,
+    "off_tick": 172672,
+    "pitch": 23,
+    "channel": 1
+  },
+  {
+    "hrefs": [
+      "2_voice_alto_part_absolute.ly:152:200:201"
     ],
     "on_tick": 172672,
     "off_tick": 172704,
-    "pitch": 52,
+    "pitch": 28,
     "channel": 1
   },
   {
     "hrefs": [
-      "2_voice_alto_part_absolute.ly:152:112:113"
+      "2_voice_alto_part_absolute.ly:152:207:208"
     ],
     "on_tick": 172704,
     "off_tick": 172736,
-    "pitch": 51,
+    "pitch": 27,
     "channel": 1
   },
   {
     "hrefs": [
-      "2_voice_alto_part_absolute.ly:152:119:120"
+      "2_voice_alto_part_absolute.ly:152:216:217"
     ],
     "on_tick": 172736,
     "off_tick": 172768,
-    "pitch": 59,
+    "pitch": 35,
     "channel": 1
   },
   {
     "hrefs": [
-      "2_voice_alto_part_absolute.ly:152:123:124"
+      "2_voice_alto_part_absolute.ly:152:222:223"
     ],
     "on_tick": 172768,
     "off_tick": 172800,
-    "pitch": 53,
+    "pitch": 29,
     "channel": 1
   },
   {
