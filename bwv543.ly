@@ -47,7 +47,9 @@
            (ly:parser-include-string
             "\\context {
             \\Staff
+            \\consists #Simple_highlight_engraver
             \\consists Staff_highlight_engraver
+            \\consists #Bar_timing_collector
           }
           \\context {
             \\Score
